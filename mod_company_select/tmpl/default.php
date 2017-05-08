@@ -26,7 +26,7 @@ JHtml::script(Juri::base() . 'modules/mod_company_select/js/company_select.js');
     <? endforeach; ?>
     <? foreach($countries as $id => $country): ?>
         <? foreach($country['distributors'] as $did => $distributor): ?>
-            <table width="531" border="1" bordercolor="#000000" id="logo-<?= $did; ?>" class="logos hidden">
+            <table width="531" id="logo-<?= $did; ?>" class="logos hidden">
                 <tr>
                     <td>
                         <table width="100%" border="0">
