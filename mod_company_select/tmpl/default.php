@@ -30,18 +30,14 @@ JHtml::script(Juri::base() . 'modules/mod_company_select/js/company_select.js');
                 <tr>
                     <td>
                         <table width="100%" border="0">
-                            <? if (file_exists($imagepath . '/' . $distributor->logo)): ?>
+                            <? if (file_exists($imagepath . '/' . $distributor->logo) && !empty($distributor->logo)): ?>
                             <td>
-                                <? if (!empty($distributor->logo)): ?>
-                                    <? if (!empty($distributor->website)): ?>
-                                        <a href="http://<?= $distributor->website; ?>" target="_blank">
-                                            <img src="<?= $imagepath . '/' . $distributor->logo; ?>" width="150" border="0">
-                                        </a>
-                                    <? else: ?>
+                                <? if (!empty($distributor->website)): ?>
+                                    <a href="http://<?= $distributor->website; ?>" target="_blank">
                                         <img src="<?= $imagepath . '/' . $distributor->logo; ?>" width="150" border="0">
-                                    <? endif; ?>
+                                    </a>
                                 <? else: ?>
-                                    <td colspan="2"><?= $distributor->company_name; ?></td>
+                                    <img src="<?= $imagepath . '/' . $distributor->logo; ?>" width="150" border="0">
                                 <? endif; ?>
                             </td>
                             <? endif; ?>
