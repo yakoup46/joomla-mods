@@ -31,7 +31,7 @@ JHtml::script(Juri::base() . 'modules/mod_company_select/js/company_select.js');
                     <td>
                         <table width="100%" border="0">
                             <td>
-                                <? if (!empty($distributor->logo)): ?>
+                                <? if (file_exists($imagepath . '/' . $distributor->logo) && !empty($distributor->logo)): ?>
                                     <? if (!empty($distributor->website)): ?>
                                         <a href="http://<?= $distributor->website; ?>" target="_blank">
                                             <img src="<?= $imagepath . '/' . $distributor->logo; ?>" width="150" border="0">
