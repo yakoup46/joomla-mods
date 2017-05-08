@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<extension type = "module" version = "3.1.0" client = "site" method="upgrade">
+
+   <name>Company Select</name>
+   <author>Jacob Luta</author>
+   <version>0.0.1</version>
+    
+   <files>
+      <filename>mod_company_select.xml</filename>
+      <filename module = "mod_company_select">mod_company_select.php</filename>
+      <filename>index.html</filename>
+      <filename>helper.php</filename>
+      <filename>tmpl/default.php</filename>
+      <filename>tmpl/index.html</filename>
+      <filename>js/company_select.js</filename>
+      <folder>images</folder>
+   </files>
+    
+   <config>
+      <fields name="params">
+         <fieldset name="basic">
+            <field
+                  name="imagepath"
+                  type="text"
+                  label="Logo Image Path"
+               />
+            </fieldset>
+      </fields>
+   </config>
+    
+</extension>
