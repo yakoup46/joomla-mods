@@ -5,7 +5,7 @@
    // Include the syndicate functions only once
    require_once dirname(__FILE__) . '/helper.php';
 
-   $countries = modDistributorList::getDistributorList();
+   $countries = modDistList::getDistList();
 
    require JModuleHelper::getLayoutPath('mod_dist_list');
 ?>

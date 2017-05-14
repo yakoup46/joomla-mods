@@ -2,7 +2,7 @@
 
 class ModDistList {
 
-    public static function getDistributorList() {
+    public static function getDistList() {
         // $db = JFactory::getDbo();
 
         // $query = $db->getQuery(true)
