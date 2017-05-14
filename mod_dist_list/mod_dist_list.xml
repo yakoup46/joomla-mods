@@ -7,8 +7,8 @@
    <version>0.0.1</version>
     
    <files>
-      <filename>mod_distributor_list.xml</filename>
-      <filename module = "mod_distributor_list">mod_distributor_list.php</filename>
+      <filename>mod_dist_list.xml</filename>
+      <filename module = "mod_dist_list">mod_dist_list.php</filename>
       <filename>index.html</filename>
       <filename>helper.php</filename>
       <filename>tmpl/default.php</filename>

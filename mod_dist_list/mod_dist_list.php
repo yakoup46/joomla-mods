@@ -7,5 +7,5 @@
 
    $countries = modDistributorList::getDistributorList();
 
-   require JModuleHelper::getLayoutPath('mod_distributor_list');
+   require JModuleHelper::getLayoutPath('mod_dist_list');
 ?>
